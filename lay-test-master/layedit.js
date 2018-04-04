@@ -111,7 +111,7 @@ layui.define(['layer', 'form'], function(exports){
     };
     layedit.sync(index)
   };
-  //将编辑器内容同步到textarea（一般用于异步提交时）
+  //将编辑器内容同步到textarea
   Edit.prototype.sync = function(index){
     var iframeWin = getWin(index);
     if(!iframeWin[0]) return;
