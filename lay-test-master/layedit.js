@@ -452,7 +452,6 @@ layui.define(['layer', 'form'], function(exports){
     });
   }
   
-
   ,link = function(options, callback){
     var body = this, index = layer.open({
       type: 1
