@@ -165,7 +165,6 @@ layui.define(['layer', 'form'], function(exports){
     return [iframeWin, iframe];
   }
   
-  //IE8下将标签处理成小写
   ,toLower = function(html){
     if(device.ie == 8){
       html = html.replace(/<.+>/g, function(str){
