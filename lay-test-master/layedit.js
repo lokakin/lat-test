@@ -238,8 +238,7 @@ layui.define(['layer', 'form'], function(exports){
     : iframeDOM.getSelection().getRangeAt(0);
   }
   
-  //当前Range对象的endContainer兼容性处理
-  ,getContainer = function(range){
+  getContainer = function(range){
     return range.endContainer || range.parentElement().childNodes[0]
   }
   
