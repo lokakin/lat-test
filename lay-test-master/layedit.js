@@ -157,8 +157,7 @@ layui.define(['layer', 'form'], function(exports){
 
     });
   }
-  
-  //获得iframe窗口对象
+
   ,getWin = function(index){
     var iframe = $('#LAY_layedit_'+ index)
     ,iframeWin = iframe.prop('contentWindow');
