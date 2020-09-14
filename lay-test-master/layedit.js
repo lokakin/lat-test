@@ -152,9 +152,8 @@ layui.define(['layer', 'form'], function(exports){
         'min-height': set.height
       }).html(textArea.value||'');
 
-      hotkey.apply(that, [iframeWin, iframe, textArea, set]); //快捷键处理
-      toolActive.call(that, iframeWin, editor, set); //触发工具
-
+      hotkey.apply(that, [iframeWin, iframe, textArea, set]); 
+      toolActive.call(that, iframeWin, editor, set); 
     });
   }
 
@@ -186,7 +185,7 @@ layui.define(['layer', 'form'], function(exports){
         
         if(parentNode.tagName.toLowerCase() === 'pre'){
           if(e.shiftKey) return
-          layer.msg('请暂时用shift+enter');
+          layer.msg('shift+enter');
           return false;
         }
         iframeDOM.execCommand('formatBlock', false, '<p>');
@@ -389,11 +388,10 @@ layui.define(['layer', 'form'], function(exports){
           }, range);
         });
       }
-      //帮助
       ,help: function(){
         layer.open({
           type: 2
-          ,title: '帮助'
+          ,title: 'help me'
           ,area: ['600px', '380px']
           ,shadeClose: true
           ,shade: 0.1
@@ -459,7 +457,7 @@ layui.define(['layer', 'form'], function(exports){
       ,shade: 0.05
       ,shadeClose: true
       ,moveType: 1
-      ,title: '超链接'
+      ,title: 'In link here'
       ,skin: 'layui-layer-msg'
       ,content: ['<ul class="layui-form" style="margin: 15px;">'
         ,'<li class="layui-form-item">'
@@ -549,11 +547,11 @@ layui.define(['layer', 'form'], function(exports){
       ,shade: 0.05
       ,shadeClose: true
       ,moveType: 1
-      ,title: '插入代码'
+      ,title: 'write in here'
       ,skin: 'layui-layer-msg'
       ,content: ['<ul class="layui-form layui-form-pane" style="margin: 15px;">'
         ,'<li class="layui-form-item">'
-          ,'<label class="layui-form-label">请选择语言</label>'
+          ,'<label class="layui-form-label">please choose</label>'
           ,'<div class="layui-input-block">'
             ,'<select name="lang">'
               ,'<option value="JavaScript">JavaScript</option>'
